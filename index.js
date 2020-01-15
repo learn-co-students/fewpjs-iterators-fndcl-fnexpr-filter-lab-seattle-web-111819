@@ -11,6 +11,7 @@ const findMatching = (drivers, name) => {
 // returns a driver if beginning provided letters match
 const fuzzyMatch = (drivers, name) => {
     return drivers.filter(driver => driver[0].toUpperCase() === name[0].toUpperCase())
+    // return drivers.filter(driver => driver[0].toLowerCase() == name[0].toLowerCase())
     // return drivers.filter(driver => driver.slice(0, name.length) == name)
 }
 
